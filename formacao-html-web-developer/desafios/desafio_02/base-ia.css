@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menu {
+  width: 100%;
+  padding-top: 10px;
+  background-color: #9dc46a;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  padding: 15px;
+  background-color: rgb(35, 3, 68);
+}
+
+.menu a {
+  color: #cca9ef;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.menu a:hover {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.header {
+  height: 25vh;
+  background-color: rgb(35, 3, 68);
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 80%;
+}
+
+.content {
+  flex: 2;
+  background-color: #cca9ef;
+  padding: 20px 30px;
+}
+
+.content h1 {
+  padding-bottom: 1rem;
+}
+
+.content p {
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+
+.content p span {
+  padding-left: 3rem;
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+.footer {
+  background-color: rgb(35, 3, 68);
+  height: 15vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+    flex-direction: column;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .header {
+    height: 20vh;
+  }
+  .content {
+    padding: 10px 20px;
+  }
+  form input,
+  textarea {
+    width: 90%;
+  }
+}
+
+/* Estilo do formulário */
+form input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #9dc46a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #87a857;
+}
