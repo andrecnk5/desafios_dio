@@ -197,3 +197,26 @@ export function getXPLostBattle(value) {
   }
   return xp;
 }
+
+// getWinRank
+export function getWinRank(value) {
+  let rank;
+  if (value < 10) {
+    rank = "Ferro";
+  } else if (value >= 10 && value <= 20) {
+    rank = "Bronze";
+  } else if (value > 20 && value <= 50) {
+    rank = "Prata";
+  } else if (value > 50 && value <= 80) {
+    rank = "Ouro";
+  } else if (value > 80 && value <= 90) {
+    rank = "Diamante";
+  } else if (value > 90 && value <= 100) {
+    rank = "Lendário";
+  } else if (value > 100) {
+    rank = "Imortal";
+  } else {
+    rank = 0;
+  }
+  return rank;
+}
